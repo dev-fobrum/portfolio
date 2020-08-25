@@ -21,7 +21,6 @@ const GithubCard = ({ description, url, name }) => {
             <div className="image" style={{
                 backgroundImage: `url(${image})`
             }}>
-                {/* <img src={image} alt="" /> */}
             </div>
 
             <div className="description">
@@ -29,7 +28,7 @@ const GithubCard = ({ description, url, name }) => {
             </div>
 
             <div className="anchor">
-                <a target="_blank" href={url} className="link">See on Github</a>
+                <a target="_blank" rel="noopener noreferrer" href={url} className="link">See on Github</a>
             </div>
         </div>
     )

@@ -21,7 +21,7 @@ const Gallery = () => {
         return PHOTOS.map((photo, i) => {
             return (
                 <div key={i} className="image-item">
-                    <img src={photo} />
+                    <img src={photo} alt="Captura de Tela CVDigital" />
                     <GiMagnifyingGlass />
                 </div>
             )

@@ -13,9 +13,9 @@ const Cvdigital = () => {
             <Gallery />
 
             <p>
-                <a target="_blank" rel="noopener" className="link" href="http://cvdigital.info">See the project</a> {' '}
+                <a target="_blank" rel="noopener noreferrer" className="link" href="http://cvdigital.info">See the project</a> {' '}
                 and {' '}
-                <a target="_blank" rel="noopener" className="link" href="http://cvdigital.info/cv/fobrum">mine personal CVDigital</a>
+                <a target="_blank" rel="noopener noreferrer" className="link" href="http://cvdigital.info/cv/fobrum">mine personal CVDigital</a>
             </p>
         </div>
     )
