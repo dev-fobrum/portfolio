@@ -167,6 +167,15 @@ p, h2 {
     text-align: center;
 }
 
+.repository-name {
+    max-width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text-color-primary);
+}
+
 .other-projects-content .loading-github span {
     font-size: 36px;
     padding-bottom: 25px;

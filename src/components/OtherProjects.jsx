@@ -48,7 +48,8 @@ const OtherProjects = () => {
                         key={repository.id}
                         url={repository.html_url}
                         description={repository.description}
-                        name={repository.full_name}
+                        name={repository.name}
+                        fullName={repository.full_name}
                     />
                 )
             })

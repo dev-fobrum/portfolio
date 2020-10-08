@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 import githublogo from '../imgs/github-logo.jpg'
 
-const GithubCard = ({ description, url, name }) => {
-    const [image, setImage] = useState('https://raw.githubusercontent.com/' + name + '/master/screenshots/screenshot_1.png')
+const GithubCard = ({ description, url, name, fullName }) => {
+    const [image, setImage] = useState('https://raw.githubusercontent.com/' + fullName + '/master/screenshots/screenshot_1.png')
 
     useEffect(() => {
         fetch(image, { method: 'head' })
@@ -21,6 +21,12 @@ const GithubCard = ({ description, url, name }) => {
             <div className="image" style={{
                 backgroundImage: `url(${image})`
             }}>
+            </div>
+
+            <div className="repository-name">
+                <a target="_blank" rel="noopener noreferrer" href={url} className="link">
+                    <h4>{name}</h4>
+                </a>
             </div>
 
             <div className="description">
